@@ -17,10 +17,6 @@ const sql = postgres({
     ssl: 'require'
 });
 
-async function getPgVersion() {
-    const result = await sql`select version()`;
-    console.log(result);
-}
 
 
 venom
